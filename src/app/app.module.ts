@@ -3,12 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { SignUpComponent } from './sign-up/sign-up.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { DynamicFormsComponent } from './dynamic-forms/dynamic-forms.component';
-import { AttributeDirectivesComponent } from './attribute-directives/attribute-directives.component';
-import { LifecycleHooksComponent } from './lifecycle-hooks/lifecycle-hooks.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { SignUpComponent } from './pages/sign-up/sign-up.component';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { DynamicFormsComponent } from './pages/dynamic-forms/dynamic-forms.component';
+import { AttributeDirectivesComponent } from './pages/attribute-directives/attribute-directives.component';
+import { LifecycleHooksComponent } from './pages/lifecycle-hooks/lifecycle-hooks.component';
 
 @NgModule({
   declarations: [

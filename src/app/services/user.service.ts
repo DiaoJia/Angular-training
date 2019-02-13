@@ -1,12 +1,12 @@
+import { UserModel } from './../models/user.model';
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from "@angular/common/http";
-import { UserModel } from 'src/models/user.model';
 import { Observable } from 'rxjs';
 
 @Injectable()
 export class UserService {
 
-    constructor(private _http: HttpClient) {        
+    constructor(private _http: HttpClient) {
     }
 
 
