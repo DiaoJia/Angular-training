@@ -1,3 +1,8 @@
+import { AdService } from './services/ad.service';
+import { AdBannerComponent } from './pages/dynamic-components/ad-banner.component';
+import { AdDirective } from './shared/directives/ad.directive';
+import { HeroProfileComponent } from './pages/dynamic-components/hero-profile.component';
+import { HeroJobAdComponent } from './pages/dynamic-components/hero-job-ad.component';
 import { HighlightDirective } from './shared/directives/highlight.directive';
 import { LoaderInterceptor } from './shared/interceptors/loader.interceptor';
 import { BrowserModule } from '@angular/platform-browser';
@@ -15,7 +20,8 @@ import { LoaderComponent } from './components/loader/loader.component';
 import { UserService } from './services/user.service';
 import { SharedService } from './services/shared.service';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
-import {FormsModule,ReactiveFormsModule} from '@angular/forms'
+import {FormsModule,ReactiveFormsModule} from '@angular/forms';
+import { DynamicComponentsComponent } from './pages/dynamic-components/dynamic-components.component'
 
 @NgModule({
   declarations: [
@@ -27,7 +33,12 @@ import {FormsModule,ReactiveFormsModule} from '@angular/forms'
     AttributeDirectivesComponent,
     LifecycleHooksComponent,
     LoaderComponent,
-    HighlightDirective
+    HighlightDirective,
+    DynamicComponentsComponent,
+    HeroJobAdComponent,
+    HeroProfileComponent,
+    AdDirective,
+    AdBannerComponent
   ],
   imports: [
     BrowserModule,
@@ -39,12 +50,14 @@ import {FormsModule,ReactiveFormsModule} from '@angular/forms'
   providers: [
     UserService,
     SharedService,
+    AdService,
     {
 			provide: HTTP_INTERCEPTORS,
 			useClass: LoaderInterceptor,
 			multi: true
 		},
   ],
+  entryComponents:[HeroJobAdComponent, HeroProfileComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

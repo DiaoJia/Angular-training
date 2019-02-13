@@ -1,3 +1,4 @@
+import { DynamicComponentsComponent } from './pages/dynamic-components/dynamic-components.component';
 import { LifecycleHooksComponent } from './pages/lifecycle-hooks/lifecycle-hooks.component';
 import { AttributeDirectivesComponent } from './pages/attribute-directives/attribute-directives.component';
 import { DynamicFormsComponent } from './pages/dynamic-forms/dynamic-forms.component';
@@ -27,6 +28,10 @@ const routes: Routes = [
   {
     path: "lifecycle-hooks",
     component: LifecycleHooksComponent
+  },
+  {
+    path: "dynamic-components",
+    component: DynamicComponentsComponent
   },
   {
     path: "",
