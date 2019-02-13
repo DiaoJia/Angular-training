@@ -1,3 +1,9 @@
-<p>
-  attribute-directives works!
-</p>
+<h1>Attribute Directive</h1>
+
+<h4>Pick a highlight color</h4>
+<div class="form-control">
+  <input type="radio" name="colors" (click)="color='lightgreen'">Green
+  <input type="radio" name="colors" (click)="color='yellow'">Yellow
+  <input type="radio" name="colors" (click)="color='red'">Red
+</div>
+<p [appHighlight]="color">Highlight me!</p>

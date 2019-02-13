@@ -1,3 +1,4 @@
+import { HighlightDirective } from './shared/directives/highlight.directive';
 import { LoaderInterceptor } from './shared/interceptors/loader.interceptor';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -25,7 +26,8 @@ import {FormsModule,ReactiveFormsModule} from '@angular/forms'
     DynamicFormsComponent,
     AttributeDirectivesComponent,
     LifecycleHooksComponent,
-    LoaderComponent
+    LoaderComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
