@@ -14,6 +14,7 @@ import { LoaderComponent } from './components/loader/loader.component';
 import { UserService } from './services/user.service';
 import { SharedService } from './services/shared.service';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
+import {FormsModule,ReactiveFormsModule} from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -29,6 +30,8 @@ import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
     AppRoutingModule
   ],
   providers: [
